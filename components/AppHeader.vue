@@ -24,10 +24,10 @@
 
       <nav class="hidden md:flex space-x-6">
         <NuxtLink to="/" class="hover:underline underline-offset-4">Home</NuxtLink>
-        <NuxtLink to="/product" class="hover:underline underline-offset-4">About</NuxtLink>
-        <NuxtLink to="/profile" class="hover:underline underline-offset-4">Vision & Mision</NuxtLink>
-        <NuxtLink to="/artikel" class="hover:underline underline-offset-4">Project</NuxtLink>
-        <NuxtLink to="/artikel" class="hover:underline underline-offset-4">Portfolio</NuxtLink>
+        <NuxtLink to="/" class="hover:underline underline-offset-4">About</NuxtLink>
+        <NuxtLink to="/" class="hover:underline underline-offset-4">Vision & Mision</NuxtLink>
+        <NuxtLink to="/" class="hover:underline underline-offset-4">Project</NuxtLink>
+        <NuxtLink to="/" class="hover:underline underline-offset-4">Portfolio</NuxtLink>
       </nav>
     </div>
 
@@ -35,11 +35,11 @@
       <div v-if="isMobileMenuOpen" class="md:hidden px-4 pb-4 bg-gray-800">
         <NuxtLink to="/" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">Home
         </NuxtLink>
-        <NuxtLink to="/product" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">About
+        <NuxtLink to="/" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">About
         </NuxtLink>
-        <NuxtLink to="/profile" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">Vision & Mision
+        <NuxtLink to="/" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">Vision & Mision
         </NuxtLink>
-        <NuxtLink to="/artikel" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">Portfolio
+        <NuxtLink to="/" class="block py-2 text-white hover:bg-gray-700 rounded" @click="closeMobileMenu">Portfolio
         </NuxtLink>
       </div>
     </transition>

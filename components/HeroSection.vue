@@ -25,11 +25,11 @@
           Indonesia (Polri)
         </p>
         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-          <NuxtLink to="/contact"
+          <NuxtLink to="/"
             class="inline-block bg-gold-500 hover:bg-gold-600 text-gray-900 font-bold py-3 px-8 rounded-full transition-colors duration-300 text-lg shadow-lg">
             Get Started
           </NuxtLink>
-          <NuxtLink to="/about"
+          <NuxtLink to="/"
             class="inline-block border border-white hover:border-gold-500 text-white hover:text-gold-500 font-semibold py-3 px-8 rounded-full transition-colors duration-300 text-lg">
             Learn More
           </NuxtLink>
