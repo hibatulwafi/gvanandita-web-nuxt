@@ -1,0 +1,35 @@
+# Nuxt.js build output
+.nuxt/
+.output/
+
+# Dependency directories
+node_modules/
+dist/
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE and OS generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+
+# Optional: if you use a specific static host (e.g., Netlify, Vercel)
+# .netlify/
+# .vercel/
+
+# Optional: if you use a specific testing framework's output
+# coverage/
