@@ -3,7 +3,7 @@
     <div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <div class="flex flex-col justify-center space-y-6" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
-          ABOUT US
+          TENTANG KAMI
         </h2>
         <p class="text-lg text-gray-700 leading-relaxed">
           <span class="font-bold">PT Glory Victory Anandita</span> adalah perusahaan jasa keuangan yang
@@ -14,9 +14,10 @@
           pendekatan secara kekeluargaan, transparan, dan berbasis teknologi.
         </p>
 
-        <h3 class="text-2xl lg:text-3xl font-bold text-gold-500 mt-8">
+        <!-- <h3 class="text-2xl lg:text-3xl font-bold text-gold-500 mt-8">
           Tentang Perusahaan Kami
-        </h3>
+        </h3> -->
+        
         <p class="text-lg text-gray-700 leading-relaxed">
           Dengan semangat <span class="italic font-semibold">"Glory in Service, Victory in Trust"</span>,
           kami berkomitmen untuk menjadi mitra finansial terpercaya yang tidak

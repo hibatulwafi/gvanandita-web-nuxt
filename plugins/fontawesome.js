@@ -1,7 +1,7 @@
 // plugins/fontawesome.js
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-// Import ikon merek (brands)
+
 import {
     faFacebook,
     faInstagram,
@@ -9,24 +9,24 @@ import {
     faTiktok,
     faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
-// Import ikon solid (untuk kontak)
+
 import {
     faPhone,
-    faMapMarkerAlt, // Untuk ikon lokasi
-    faEnvelope // Untuk ikon email
+    faMapMarkerAlt,
+    faEnvelope
 } from '@fortawesome/free-solid-svg-icons'
 
 config.autoAddCss = false
 
-// Tambahkan semua ikon yang Anda butuhkan ke library
 library.add(
     faFacebook,
     faInstagram,
     faLinkedin,
     faTiktok,
+    faWhatsapp,
     faPhone,
-    faMapMarkerAlt, // Tambahkan ini
-    faEnvelope // Tambahkan ini
+    faMapMarkerAlt,
+    faEnvelope
 )
 
 export default defineNuxtPlugin((nuxtApp) => {

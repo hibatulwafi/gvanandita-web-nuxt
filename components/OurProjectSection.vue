@@ -1,10 +1,10 @@
 <template>
-  <section class="min-h-screen bg-[#171616] text-white flex items-center justify-center p-8 lg:p-16">
+  <section class="min-h-screen bg-slate-100 text-gray-900 flex items-center justify-center p-8 lg:p-16">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div class="space-y-8">
         <h2 class="text-4xl lg:text-6xl font-extrabold text-gold-500 tracking-wider uppercase leading-tight"
             data-aos="fade-up" data-aos-duration="800">
-          OUR PROJECT
+          PROJECT KAMI
         </h2>
         <div class="space-y-6">
           <div v-for="(item, index) in projectItems" :key="index"
@@ -14,7 +14,7 @@
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <p class="text-lg lg:text-xl text-gray-300">
+            <p class="text-lg lg:text-xl text-gray-900">
               {{ item.text }}
             </p>
           </div>

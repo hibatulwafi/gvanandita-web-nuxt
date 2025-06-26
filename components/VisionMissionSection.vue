@@ -3,7 +3,7 @@
     <div class="container mx-auto px-8">
       <h2 class="text-4xl lg:text-5xl font-extrabold text-white text-center lg:text-left mb-12 lg:mb-16 uppercase"
           data-aos="fade-up" data-aos-duration="800">
-        VISION AND MISSION
+        VISI & MISI
       </h2>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">

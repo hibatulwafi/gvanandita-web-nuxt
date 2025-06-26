@@ -1,17 +1,16 @@
 <template>
   <footer class="bg-[#171616] text-white  pt-12 pb-6">
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <div class="flex flex-col items-center md:items-start text-center md:text-left">
         <NuxtLink to="/" class="mb-4">
           <img src="/public/images/white-logo.png" alt="GVA Logo" class="h-20 w-auto" />
         </NuxtLink>
-        <p class="text-sm sm:text-sm lg:text-base font-extrabold leading-tight text-white drop-shadow-lg">
-          Glory in Service,
-          Victory in Trust
+        <p class="text-sm sm:text-sm lg:text-lg font-extrabold leading-tight text-white drop-shadow-lg">
+          <span class="text-gold-500"> Glory in Service, Victory in Trust </span>
         </p>
 
-        <p class="text-sm sm:text-sm lg:text-base leading-tight text-white drop-shadow-lg">
+        <p class="text-sm sm:text-sm lg:text-base leading-tight text-white drop-shadow-lg mt-1">
           PT Glory Victory Anandita
         </p>
       </div>
@@ -55,12 +54,16 @@
 
         <div class="flex items-start mb-2">
           <font-awesome-icon :icon="['fas', 'phone']" class="w-5 h-5 text-gold-500 mr-3 mt-1 flex-shrink-0" />
-          <p class="text-gray-300">+62 823 1100 1068</p>
+          <p class="text-gray-300">
+            <a href="https://wa.me/6282311001068" target="_blank" class="hover:underline">
+              +62 823 1100 1068
+            </a>
+          </p>
         </div>
 
         <div class="flex items-start mb-2">
           <font-awesome-icon :icon="['fas', 'envelope']" class="w-5 h-5 text-gold-500 mr-3 mt-1 flex-shrink-0" />
-          <p class="text-gray-300">Email: <a href="mailto:sekretaris@gvanandita.com"
+          <p class="text-gray-300">Email: <a href="mailto:info@gvanandita.com"
               class="hover:underline">info@gvanandita.com</a></p>
         </div>
 
@@ -76,11 +79,12 @@
 
       </div>
 
-      <div class="mt-12 text-center text-sm text-gray-500">
-        <hr class="border-gray-700 my-4" />
-        &copy; 2025 PT Glory Victory Anandita. All rights reserved.
-      </div>
 
+
+    </div>
+    <div class="mt-12 text-center text-sm text-gray-500">
+      <hr class="border-gray-700 my-4" />
+      &copy; 2025 PT Glory Victory Anandita. All rights reserved.
     </div>
   </footer>
 </template>
