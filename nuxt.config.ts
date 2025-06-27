@@ -1,6 +1,9 @@
 // nuxt.config.ts
 import { defineNuxtConfig } from "nuxt/config";
 
+// Definisikan URL situs Anda di sini, agar mudah diakses di seluruh konfigurasi
+// const SITE_URL = "https://www.gvanandita.com"; // GANTI DENGAN URL ASLI WEBSITE ANDA
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -33,30 +36,43 @@ export default defineNuxtConfig({
   },
   plugins: ["~/plugins/fontawesome.js", "~/plugins/aos.client.js"],
 
-  // --- Perubahan PENTING di sini ---
+  // --- Penyesuaian konfigurasi @nuxtjs/seo ---
   modules: [
-    ['@nuxtjs/seo', {
-      site: {
-        url: 'https://www.gvanandita.com', 
-        name: 'GV Anandita',
-        description: 'Solusi Pembiayaan Pensiun ASN, TNI, Polri.',
-        defaultLocale: 'id',
-        identity: {
-          type: 'Organization',
-          name: 'GV Anandita',
-          url: 'https://www.gvanandita.com',
-        }
+    [
+      "@nuxtjs/seo",
+      {
+        site: {
+          // Gunakan process.env.NUXT_PUBLIC_SITE_URL di sini
+          url: process.env.NUXT_PUBLIC_SITE_URL || "https://www.gvanandita.com", // Fallback jika .env tidak ada
+          name: "GV Anandita",
+          description: "Solusi Pembiayaan Pensiun ASN, TNI, Polri.",
+          defaultLocale: "id",
+          identity: {
+            type: "Organization",
+            name: "GV Anandita",
+            // Pastikan ini juga mengambil dari variabel lingkungan
+            url:
+              process.env.NUXT_PUBLIC_SITE_URL || "https://www.gvanandita.com",
+          },
+        },
+        sitemap: {
+          enabled: true,
+          // Penting: Pastikan hostname juga mengambil dari variabel lingkungan
+          hostname:
+            process.env.NUXT_PUBLIC_SITE_URL || "https://www.gvanandita.com",
+        },
+        robots: {
+          enabled: true,
+          rules: [{ UserAgent: "*" }, { Allow: "/" }],
+        },
       },
-      sitemap: {
-        enabled: true,
-      },
-      robots: {
-        enabled: true,
-        rules: [
-          { UserAgent: '*' },
-          { Allow: '/' },
-        ],
-      },
-    }],
+    ],
   ],
+
+  // Ini sudah benar, pastikan tetap ada untuk konsistensi di runtime
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://www.gvanandita.com",
+    },
+  },
 });
