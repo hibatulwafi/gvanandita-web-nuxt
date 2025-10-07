@@ -6,9 +6,9 @@
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center">
         <NuxtLink to="/" class="flex items-center space-x-2">
-          <img v-if="scrolled" src="/images/black-logo.png" alt="KSP Glo Anandita Logo"
+          <img v-if="scrolled" src="/images/black-logo.png" alt="PT Glory Victory Anandita Logo"
             class="h-16 transition-opacity duration-300" />
-          <img v-else src="/images/white-logo.png" alt="KSP Glo Anandita Logo"
+          <img v-else src="/images/white-logo.png" alt="PT Glory Victory Anandita Logo"
             class="h-16 transition-opacity duration-300" />
         </NuxtLink>
       </div>

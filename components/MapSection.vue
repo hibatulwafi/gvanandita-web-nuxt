@@ -10,7 +10,7 @@
         <div class="flex flex-col justify-center text-left lg:text-left w-full max-w-fit mx-auto p-4 lg:p-0">
           <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100"
             data-aos-duration="900">
-            Kami siap menyambut Anda di kantor pusat KSP Glo Anandita. Silakan kunjungi kami atau hubungi melalui
+            Kami siap menyambut Anda di kantor pusat PT Glory Victory Anandita. Silakan kunjungi kami atau hubungi melalui
             informasi di bawah:
           </p>
 
